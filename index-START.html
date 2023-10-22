@@ -26,6 +26,10 @@
 
     // Some and Every Checks
     // Array.prototype.some() // is at least one person 19 or older?
+                                              //return whether the value of [current year - year person was born] which is their age, is anyone greater than or equal to 19
+    const atLeast19 = people.some((person) => [2023 - person.year] >= 19)
+    console.log(atLeast19);
+
     // Array.prototype.every() // is everyone 19 or older?
 
     // Array.prototype.find()
